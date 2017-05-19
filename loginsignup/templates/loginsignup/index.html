@@ -1,0 +1,21 @@
+{% extends 'loginsignup/base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>
+        <h3>We are Blood-e-Merry.</h3> <h4> A group of coders formed to make a difference ... with the help of a few
+        awesome APIs ... and well, StackOverflow ;)</h4><br>
+
+        <h5>How we work:</h5>
+        <ul>
+            <li>All you have to do is spend a couple minutes with a <a href="{% url 'loginsignup:signup' %}"><strong>signup</strong></a> process.<br></li>
+            <li>Once you are signed up, you will start receiving text messages when people ask for blood donors.<strong>
+                ( No spam. We promise! ) </strong><br></li>
+            <li>We match people's requests from Twitter with donors based on the location information.
+                <strong>( So make sure you enter your location right! ) </strong></li>
+            <br>
+        </ul>
+        </p>
+    </div>
+{% endblock %}

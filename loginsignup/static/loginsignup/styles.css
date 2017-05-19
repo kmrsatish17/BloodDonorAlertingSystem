@@ -1,0 +1,26 @@
+body {
+  background: url("images/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* unvisited link */
+a:link {
+    color: ghostwhite;
+}
+
+/* visited link */
+a:visited {
+    color: ghostwhite;
+}
+
+#content {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.table-nonfluid {
+   width: auto !important;
+}

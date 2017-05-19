@@ -1,0 +1,59 @@
+{% extends 'loginsignup/base.html' %}
+
+{% block content %}
+    <div id="content">
+        <div class="container">
+            <h1>Profile</h1><br>
+            <div class=table-responsive>
+                <form action="{% url 'loginsignup:edit_profile' %}">
+                    <table class="table table-condensed table-hover table-nonfluid">
+                        <tbody>
+                        <tr>
+                            <th scope=row>Username:</th>
+                            <td>{{ user }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>First name:</th>
+                            <td>{{ user.first_name }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>Last name:</th>
+                            <td>{{ user.last_name }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>Email:</th>
+                            <td>{{ user.email }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>Blood Group:</th>
+                            <td>{{ user.donor.blood_group }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>Phone:</th>
+                            <td>{{ user.donor.phone }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>City:</th>
+                            <td>{{ user.donor.city }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>State:</th>
+                            <td>{{ user.donor.state }}</td>
+                        </tr>
+                        <tr>
+                            <th scope=row>Country:</th>
+                            <td>{{ user.donor.country }}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                                <button type="submit" class="btn btn-primary">Edit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
